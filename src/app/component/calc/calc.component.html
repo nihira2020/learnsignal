@@ -6,16 +6,16 @@
         <form class="example-form">
             <mat-form-field class="mat-full-width">
               <mat-label>Height</mat-label>
-              <input name="amount" matInput [(ngModel)]="height" >
+              <input name="height" matInput [(ngModel)]="height" >
             </mat-form-field>
             <mat-form-field class="mat-full-width">
-              <mat-label>Height</mat-label>
-              <input name="amount" matInput [(ngModel)]="width" >
+              <mat-label>Width</mat-label>
+              <input name="width" matInput [(ngModel)]="width" >
             </mat-form-field>
           
           </form>
           <div style="border: 1px solid #ccc;padding: 10px;">
-            <app-child (transferdata)="getdata($event)" [height]="height" [width]="width">
+            <app-child (getdata)="getdata($event)" [ht]="height" [wt]="width">
             </app-child>
           </div>
         
